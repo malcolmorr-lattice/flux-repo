@@ -19,10 +19,10 @@ metadata:
   namespace: flux-system
 spec:
   dependsOn:
-    - name: policies
+    - name: templates
   interval: 5m
   path: "./opa/policies"
   prune: true
   sourceRef:
-    kind: GitRepository
+    kind: GitRepositorys
     name: flux-system
