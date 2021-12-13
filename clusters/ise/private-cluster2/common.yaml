@@ -21,7 +21,7 @@ spec:
   dependsOn:
     - name: templates
   interval: 5m
-  path: "./opa/policies"
+  path: ./opa/policies
   prune: true
   sourceRef:
     kind: GitRepository
