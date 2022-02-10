@@ -12,17 +12,17 @@ spec:
   prune: true
   path: ./opa/templates
 ---
-apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
-kind: Kustomization
-metadata:
-  name: policies
-  namespace: flux-system
-spec:
-  dependsOn:
-    - name: templates
-  interval: 5m
-  path: ./opa/policies
-  prune: true
-  sourceRef:
-    kind: GitRepository
-    name: flux-system
+#apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+#kind: Kustomization
+#metadata:
+#  name: policies
+#  namespace: flux-system
+#spec:
+#  dependsOn:
+#    - name: templates
+#  interval: 5m
+#  path: ./opa/policies
+#  prune: true
+#  sourceRef:
+#    kind: GitRepository
+#    name: flux-system
